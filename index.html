@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1>Calculadora</h1>
+
+    <form name="calculadora_esquema">
+        <input type="text" name="pantalla" id="pantalla" readonly>
+        <br><br>
+
+        <!-- fila 1 de botones -->
+        <input type="button" value="7" onclick="agregarNumero('7')">
+        <input type="button" value="8" onclick="agregarNumero('8')">
+        <input type="button" value="9" onclick="agregarNumero('9')">
+        <input type="button" value="/" onclick="agregarNumero('/')">
+
+        <!-- fila 2 de botones -->
+        <input type="button" value="4" onclick="agregarNumero('4')">
+        <input type="button" value="5" onclick="agregarNumero('5')">
+        <input type="button" value="6" onclick="agregarNumero('6')">
+        <input type="button" value="*" onclick="agregarNumero('*')">
+
+        <!-- fila 3 de botones -->
+        <input type="button" value="1" onclick="agregarNumero('1')">
+        <input type="button" value="2" onclick="agregarNumero('2')">
+        <input type="button" value="3" onclick="agregarNumero('3')">
+        <input type="button" value="-" onclick="agregarNumero('-')">
+
+        <!-- fila 4 de botones -->
+        <input type="button" value="0" onclick="agregarNumero('0')">
+        <input type="button" value="." onclick="agregarNumero('.')">
+        <input type="button" value="c" onclick="LimpiarPantalla()">
+        <input type="button" value="+" onclick="agregarOperador(+)">
+        <br><br>
+
+        <!-- boton para calcular el resultado -->
+        <input type="button" value="=" onclick="calcularResultado()">
+    </form>
+    <script src="funciones.js"></script>
 </body>
+
 </html>
