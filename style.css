@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form[name=calculadora_esquema]{
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+#pantalla{
+    width: calc(100% - 22px); /* Que ocupe casi todo el ancho del formulario, menos un poquito para el borde */
+    height: 40px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para que el padding no aumente el tamaño total */
+}
+
+/* estilos para los botones*/ 
+input[type=button]{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+}
+
+/* raton gris botones */
+input[type="button"]:hover {
+    background-color: #d0d0d0; 
+}
+
